@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Trashketball</title>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- CreateJS -->
+    <script src="vendor/createjs/easeljs.min.js"></script>
+    <script src="vendor/createjs/tweenjs.min.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS-->
+    <link href="style.css" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+
+    <!--&lt;!&ndash; Navigation &ndash;&gt;-->
+    <!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">-->
+      <!--<div class="container">-->
+        <!--<a class="navbar-brand" href="#">Start Bootstrap</a>-->
+        <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">-->
+          <!--<span class="navbar-toggler-icon"></span>-->
+        <!--</button>-->
+        <!--<div class="collapse navbar-collapse" id="navbarResponsive">-->
+          <!--<ul class="navbar-nav ml-auto">-->
+            <!--<li class="nav-item active">-->
+              <!--<a class="nav-link" href="#">Home-->
+                <!--<span class="sr-only">(current)</span>-->
+              <!--</a>-->
+            <!--</li>-->
+            <!--<li class="nav-item">-->
+              <!--<a class="nav-link" href="#">About</a>-->
+            <!--</li>-->
+            <!--<li class="nav-item">-->
+              <!--<a class="nav-link" href="#">Services</a>-->
+            <!--</li>-->
+            <!--<li class="nav-item">-->
+              <!--<a class="nav-link" href="#">Contact</a>-->
+            <!--</li>-->
+          <!--</ul>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</nav>-->
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="mt-5">Trashketball</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="gameCanvasContainer" class="row">
+        <canvas id="gameCanvas" width="800" height="500" style="position:relative"></canvas>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-3">
+          <input type="checkbox" name="percent" value="Percent"> Show percent<br>
+          <input type="checkbox" name="decimal" value="Decimal"> Show decimal<br>
+        </div>
+
+        <div class="col-md-3 col-sm-3">
+          <table style="width:100%">
+            <tr>
+              <td>Shots:</td>
+              <td>10/20</td>
+            </tr>
+            <tr>
+              <td>Decimal:</td>
+              <td>0.5</td>
+            </tr>
+            <tr>
+              <td>Percent:</td>
+              <td>50%</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="main.js"></script>
+
+  </body>
+
+</html>
