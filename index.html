@@ -57,45 +57,82 @@
     <!--</nav>-->
 
     <!-- Page Content -->
-    <div class="container">
+
+    <div class="container page-header">
       <div class="row">
         <div class="col-lg-12">
-          <h1 class="mt-5">Trashketball</h1>
+          <h1 class="mt-5 display-4">Trashketball</h1>
         </div>
       </div>
     </div>
 
     <div class="container">
       <div id="gameCanvasContainer" class="row">
-        <canvas id="gameCanvas" width="800" height="500" style="position:relative"></canvas>
+        <canvas id="gameCanvas" width="1000" height="500" style="position:relative"></canvas>
       </div>
     </div>
+
 
     <div class="container">
-      <div class="row">
-        <div class="col-md-3 col-sm-3">
-          <input type="checkbox" name="percent" value="Percent"> Show percent<br>
-          <input type="checkbox" name="decimal" value="Decimal"> Show decimal<br>
-        </div>
-
-        <div class="col-md-3 col-sm-3">
-          <table style="width:100%">
-            <tr>
-              <td>Shots:</td>
-              <td>10/20</td>
-            </tr>
-            <tr>
-              <td>Decimal:</td>
-              <td>0.5</td>
-            </tr>
-            <tr>
-              <td>Percent:</td>
-              <td>50%</td>
-            </tr>
-          </table>
+      <div class="card bg-light text-center">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-3 col-sm-3 align-self-center">
+              <input type="button" name="throw" value="Throw" id="throwButton" class="btn btn-primary text-bold">
+            </div>
+            <div class="col-md-6 col-sm-6 align-self-center">
+              Basket distance: <span id="distanceLabel">50</span> <br> <input type="range" id="distanceSlider">
+            </div>
+            <div class="col-md-3 col-sm-3 align-self-center">
+              <input type="checkbox" name="backboard" value="Backboard" id="backboardCheckbox"> Backboard<br>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
+
+
+
+    <div class="container mt-3">
+      <div class="card bg-light">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-6 col-sm-6">
+              <table style="width:100%">
+                <tr>
+                  <td><h3>Shots:</h3></td>
+                  <td><h3 id="shotsLabel"></h3></td>
+                </tr>
+                <tr id="decimalRow">
+                  <td>Decimal:</td>
+                  <td id="decimalLabel"></td>
+                </tr>
+                <tr id="percentRow">
+                  <td>Percent:</td>
+                  <td id="percentLabel"></td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="col-md-3 col-sm-3 align-self-center">
+              <input type="checkbox" name="decimal" value="Decimal" id="decimalCheckbox"> Show decimal<br>
+              <input type="checkbox" name="percent" value="Percent" id="percentCheckbox"> Show percent<br>
+            </div>
+
+            <div class="col-md-3 col-sm-3 align-self-center">
+              <input type="button" name="reset" value="Reset" id="resetButton" class="btn btn-danger">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container text-center text-muted">
+        <small> Copyright &copy; 2018</small>
+      </div>
+    </footer>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
